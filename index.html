@@ -10,9 +10,11 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
 	<link rel="stylesheet" type="text/css" href="css/tabs-block.css">
 	<link rel="stylesheet" type="text/css" href="css/awesome-block.css">
 	<link rel="stylesheet" type="text/css" href="css/pricing-block.css">
+	
 	<title>Axit</title>
 </head>
 
@@ -21,8 +23,8 @@
 
 	</header>
 
-	<main>
-		<section class="tabs-block">
+	<main class="main-block">
+		<section class="tabs-block container">
 			<ul class="tabs-block__list">
 				<li class="tab__shortcut--active">Tab 1</li>
 				<li class="tab__shortcut">Tab 2</li>
@@ -33,7 +35,7 @@
 					<h2 class="tab-info__title">
 						Tabs with soft transitioning effect.
 					</h2>
-					<p class="tab-info__text">
+					<p class="tab-info__text text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
 						viverra
@@ -51,14 +53,14 @@
 			</div>
 		</section>
 
-		<section class="awesome-block">
-			<h2 class="awesome-block__title">Why this is awesome</h2>
-			<p class="awesome-block__suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		<section class="awesome-block container">
+			<h2 class="awesome-block__title title">Why this is awesome</h2>
+			<p class="awesome-block__suptitle suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<ul class="awesome-block__list">
 				<li class="benefit">
 					<img src="img/icon_1.png" alt="First awesome item" class="benefit__icon">
 					<h3 class="benefit__title">Thoughtful Design</h3>
-					<p class="benefit__text">
+					<p class="benefit__text text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing
 						<br>
 						elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
@@ -69,7 +71,7 @@
 				<li class="benefit">
 					<img src="img/icon_2.png" alt="Second awesome item" class="benefit__icon">
 					<h3 class="benefit__title">Thoughtful Design</h3>
-					<p class="benefit__text">
+					<p class="benefit__text text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing
 						<br>
 						elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
@@ -80,7 +82,7 @@
 				<li class="benefit">
 					<img src="img/icon_3.png" alt="Third awesome item" class="benefit__icon">
 					<h3 class="benefit__title">Thoughtful Design</h3>
-					<p class="benefit__text">
+					<p class="benefit__text text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing
 						<br>
 						elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
@@ -92,49 +94,49 @@
 		</section>
 
 		<section class="pricing-block">
-			<h2 class="pricing-block__title">Pricing options</h2>
-			<p class="pricing-block__suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<ul class="pricing-block__list">
-			  <li class="pricing-option">
-				<h3 class="option__name">Basic</h3>
-				<p class="option__cost">$10</p>
-				<p class="option__text">Free for life</p>
-				<ul class="option__list">
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
+				<h2 class="pricing-block__title title">Pricing options</h2>
+				<p class="pricing-block__suptitle suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<ul class="pricing-block__list">
+				<li class="pricing-option">
+					<h3 class="option__name">Basic</h3>
+					<p class="option__cost">$10</p>
+					<p class="option__text text">Free for life</p>
+					<ul class="option__list">
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					</ul>
+				</li>
+				<li class="pricing-option pricing-option--active">
+					<h3 class="option__name">Optima</h3>
+					<p class="option__cost">$20</p>
+					<p class="option__text  text">Free for life</p>
+					<ul class="option__list">
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					</ul>
+				</li>
+				<li class="pricing-option">
+					<h3 class="option__name">Pro</h3>
+					<p class="option__cost">$30</p>
+					<p class="option__text  text">Free for life</p>
+					<ul class="option__list">
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					<li class="option-list__item text">1 gb of space</li>
+					</ul>
+				</li>
 				</ul>
-			  </li>
-			  <li class="pricing-option--active">
-				<h3 class="option__name">Optima</h3>
-				<p class="option__cost">$20</p>
-				<p class="option__text">Free for life</p>
-				<ul class="option__list">
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				</ul>
-			  </li>
-			  <li class="pricing-option">
-				<h3 class="option__name">Pro</h3>
-				<p class="option__cost">$30</p>
-				<p class="option__text">Free for life</p>
-				<ul class="option__list">
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				  <li class="option-list__item">1 gb of space</li>
-				</ul>
-			  </li>
-			</ul>
 		  </section>
 	</main>
 

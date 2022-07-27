@@ -1,12 +1,5 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 .tabs-block{
-	max-width: 1170px;
-	margin: 99px auto 0;
+	margin-top: 99px;
 }
 
 .tabs-block__list{
@@ -77,10 +70,6 @@
 .tab-info__text{
 	width: 570px; 
 	min-height: 210px;
-	font-family: 'Raleway';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 21px;
 }
 
 .tab-info__botton{
