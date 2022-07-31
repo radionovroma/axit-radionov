@@ -1,56 +1,54 @@
 .awesome-block{
 	margin-top: 50px;
-	margin-bottom: 58px;
-}
-
-.awesome-block__title{
-	min-height: 150px;
-	padding: 53px 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	padding-top: 60px;
 }
 
 .awesome-block__suptitle{
 	margin-top: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .awesome-block__list{
-	margin-top: 71px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	list-style-type: none;
-}
-
-.benefit{
-	width: 370px;
-	display: flex;
-	flex-direction: column;
-    align-items: center;
-}
-
-.benefit__icon{
-	width: 170px;
+	margin-top: 70px;
 }
 
 .benefit__title{
-	width: 369px;
-	min-height: 100px;
-	padding: 33px 0;
+	padding-top: 200px;
 	font-family: 'Open Sans';
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 33px;
 	text-align: center;
+	position: relative;
+}
+
+.benefit__title--first::before{
+	content: url(/img/icon_1.png);
+	position: absolute;
+	height: 170px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.benefit__title--second::before{
+	content: url(/img/icon_2.png);
+	position: absolute;
+	height: 170px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.benefit__title--third::before{
+	content: url(/img/icon_3.png);
+	position: absolute;
+	height: 170px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .benefit__text{
-	width: 370px;
-	margin-top: 8px;
+	margin-top: 40px;
 	text-align: center;
 }
