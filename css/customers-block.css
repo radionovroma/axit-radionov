@@ -1,0 +1,55 @@
+.customers-block{
+	padding-top: 110px;
+	padding-bottom: 64px;
+}
+
+.customers-block__list{
+	margin-top: 83px;
+}
+
+.comment-block{
+	padding-bottom: 20px;
+}
+
+.comment-block__text{
+	padding: 38px 23px;
+	text-align: center;
+	color: #86878B;
+	background: #E2E2E2;
+	border-radius: 10px;
+	position: relative;
+}
+
+.comment-block__text::after{
+	content: '';
+	position: absolute;
+	top: 179px;
+	left: 70px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #E2E2E2;
+}
+
+.comment__customer{
+	width: 100%;
+	margin-top: 46px;
+	display: flex;
+	gap: 30px;
+}
+
+.customer__avatar{
+	width: 70px;
+	height: 70px;
+}
+
+.customer-info__name{
+	font-family: 'Open Sans', "Times New Roman", sans-serif;;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	text-transform: capitalize;
+}
+
+.customer-info__career{
+	margin-top: 35px;
+}
