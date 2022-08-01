@@ -42,10 +42,8 @@
 
 .tab__wrap{
 	width: 700px;
-	padding: 40px 28px 28px 100px;
+	padding: 40px 28px 30px 100px;
 	padding-right: 28px;
-	display: flex;
-	flex-direction: column;
 }
 
 .tab-info__title{

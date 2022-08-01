@@ -1,0 +1,33 @@
+.design-block{
+	background-image: url(/img/background_2.png);
+}
+
+.design-block__wrap{
+	padding: 50px 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.design-wrap__info{
+	padding-top: 60px;
+}
+
+.design-info__title{
+	color: #ffffff;
+}
+
+.design-info__title::after{
+	background-color: #ffffff
+}
+
+.design-info__suptitle{
+	color: #ffffff;
+}
+
+.design-info__button{
+	min-height: 58px;
+	min-width: 370px;
+	margin: 70px auto 0;
+	line-height: 25px;
+	background: none;
+	border: 2px solid #FFFFFF;
+}
