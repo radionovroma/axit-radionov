@@ -17,13 +17,16 @@
 	color: #86878B;
 	background: #E2E2E2;
 	border-radius: 10px;
+}
+
+.comment-block{
 	position: relative;
 }
 
-.comment-block__text::after{
+.comment-block::after{
 	content: '';
 	position: absolute;
-	top: 179px;
+	bottom: 0;
 	left: 70px;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
