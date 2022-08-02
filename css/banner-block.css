@@ -82,32 +82,17 @@
 
 .form__item{
 	width: 370px;
-	padding-bottom: 16px;
 	margin: 33px auto 0;
-	font-family: 'Open Sans', "Times New Roman", sans-serif;
-	font-size: 14px;
-	line-height: 19px;
-	text-transform: capitalize;
-	border: none;
-	border-bottom: 1px solid #BDBDBD;;
-	color: #BDBDBD;
 }
 
 .form__item:first-child{
 	margin-top: 0;
 }
 
-.form__buttton{
+.form__button{
 	margin-top: 75px;
 	padding: 20px;
-	font-family: 'Open Sans', "Times New Roman", sans-serif;
-	font-weight: 600;
 	font-size: 15px;
 	line-height: 20px;
-	text-transform: capitalize;
-	text-align: center;
-	color: #FFFFFF;
-	background: #EC7979;
-	border: none;
 	border-radius: 0px 0px 10px 10px;	
 }

@@ -76,3 +76,24 @@ body{
 	background: #EC7979;
 	border: none;
 }
+
+.form-item{
+	padding-bottom: 16px;
+	font-family: 'Open Sans', "Times New Roman", sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: capitalize;
+	border: none;
+	border-bottom: 1px solid #BDBDBD;;
+	color: #BDBDBD;
+}
+
+.form-button{
+	font-family: 'Open Sans', "Times New Roman", sans-serif;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-align: center;
+	color: #FFFFFF;
+	background: #EC7979;
+	border: none;
+}
