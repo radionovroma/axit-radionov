@@ -97,3 +97,8 @@ body{
 	background: #EC7979;
 	border: none;
 }
+
+.overlay{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
