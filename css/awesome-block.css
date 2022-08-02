@@ -8,11 +8,11 @@
 }
 
 .awesome-block__list{
-	margin-top: 70px;
+	margin-top: 110px;
 }
 
 .benefit__title{
-	padding-top: 200px;
+	padding-top: 170px;
 	font-family: 'Open Sans', "Times New Roman", sans-serif;
 	font-size: 24px;
 	font-weight: 700;
@@ -22,7 +22,10 @@
 }
 
 .benefit__title--first::before{
-	content: url(/img/awesome_icon_1@desktop.svg);
+	content: '';
+	background-image: url(/img/awesome_icon_1@desktop.svg);
+	background-repeat: no-repeat;
+	width: 92px;
 	position: absolute;
 	height: 170px;
 	top: 0;
@@ -31,7 +34,10 @@
 }
 
 .benefit__title--second::before{
-	content: url(/img/awesome_icon_2@desktop.svg);
+	content: '';
+	background-image: url(/img/awesome_icon_2@desktop.svg);
+	background-repeat: no-repeat;
+	width: 92px;
 	position: absolute;
 	height: 170px;
 	top: 0;
@@ -40,7 +46,10 @@
 }
 
 .benefit__title--third::before{
-	content: url(/img/awesome_icon_3@desktop.svg);
+	content: '';
+	background-image: url(/img/awesome_icon_3@desktop.svg);
+	background-repeat: no-repeat;
+	width: 92px;
 	position: absolute;
 	height: 170px;
 	top: 0;
