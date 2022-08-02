@@ -1,14 +1,10 @@
 .design-block{
-	background-image: url(/img/design_bg.jpg);
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/design_bg.jpg);
+	background-size: contain;
 }
 
 .design-block__wrap{
-	padding: 50px 0;
-	background: rgba(0, 0, 0, 0.5);
-}
-
-.design-wrap__info{
-	padding-top: 60px;
+	padding: 60px 0 50px;
 }
 
 .design-info__title{
