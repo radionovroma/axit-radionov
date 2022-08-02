@@ -22,7 +22,7 @@
 }
 
 .benefit__title--first::before{
-	content: url(/img/icon_1.png);
+	content: url(/img/awesome_icon_1@desktop.svg);
 	position: absolute;
 	height: 170px;
 	top: 0;
@@ -31,7 +31,7 @@
 }
 
 .benefit__title--second::before{
-	content: url(/img/icon_2.png);
+	content: url(/img/awesome_icon_2@desktop.svg);
 	position: absolute;
 	height: 170px;
 	top: 0;
@@ -40,7 +40,7 @@
 }
 
 .benefit__title--third::before{
-	content: url(/img/icon_3.png);
+	content: url(/img/awesome_icon_3@desktop.svg);
 	position: absolute;
 	height: 170px;
 	top: 0;
