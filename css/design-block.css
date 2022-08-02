@@ -27,3 +27,14 @@
 	background: none;
 	border: 2px solid #FFFFFF;
 }
+
+.design-info__button:hover{
+	color: #EC7979;
+	border: 2px solid #EC7979;
+}
+
+.design-info__button:active{
+	color: #FFFFFF;
+	background: #AB4949;
+	border: 2px solid #AB4949;
+}

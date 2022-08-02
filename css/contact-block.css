@@ -37,3 +37,12 @@
 	line-height: 25px;
 	color: #FFFFFF;
 }
+
+.contact-form__button:hover{
+	background: #AB4949;
+}
+
+.contact-form__button:active{
+	background: #EC7979;
+	box-shadow: inset 0px 0px 10px #AB4949;
+}

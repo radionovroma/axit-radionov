@@ -81,6 +81,15 @@ p.tab-info__text:first-of-type{
 	border: none;
 }
 
+.tab-info__button:hover{
+	background: #AB4949;
+}
+
+.tab-info__button:active{
+	background: #EC7979;
+	box-shadow: inset 0px 0px 10px #AB4949;
+}
+
 .tab__img{
 	width: 470px;
 	height: auto;

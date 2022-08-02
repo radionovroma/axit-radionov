@@ -53,6 +53,17 @@
 	border: 2px solid #FFFFFF; 
 }
 
+.banner-info__button:hover{
+	color: #EC7979;
+	border: 2px solid #EC7979;
+}
+
+.banner-info__button:active{
+	color: #FFFFFF;
+	background: #AB4949;
+	border: 2px solid #AB4949;
+}
+
 .banner__form-wrap{
 	width: 470px;
 	background-color: #FFFFFF;
@@ -95,4 +106,13 @@
 	font-size: 15px;
 	line-height: 20px;
 	border-radius: 0px 0px 10px 10px;	
+}
+
+.form__button:hover{
+	background: #AB4949;
+}
+
+.form__button:active{
+	background: #EC7979;
+	box-shadow: inset 0px 0px 10px #AB4949;
 }
