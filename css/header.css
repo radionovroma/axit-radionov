@@ -1,11 +1,13 @@
-.header{
+.header-block{
 	width: 100%;
-	padding: 0 170px 0 115px;
 	position: absolute;
 	top: 0;
+	background-color: #000000;
+}
+
+.header-block__wrap{
 	display: flex;
 	justify-content: space-between;
-	background-color: #000000;
 }
 
 .header__logo{
