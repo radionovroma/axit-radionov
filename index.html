@@ -18,23 +18,35 @@
 
 	<header class="header-block">
 		<div class="header-block__wrap header container">
-			<img src="img/logo@desktop.svg" alt="Axit logo" class="header__logo">
-			<nav class="header__nav nav-list">
-				<a href="#features" class="nav-list__item">
-					features
-				</a>
-				<a href="#about" class="nav-list__item">
-					About
-				</a>
-				<a href="#pricing" class="nav-list__item">
-					Pricing
-				</a>
-				<a href="#reviews" class="nav-list__item">
-					Reviews
-				</a>
-				<a href="#contact" class="nav-list__item">
-					Contact
-				</a>
+			<img src="img/logo@desktop.svg" alt="Axit logo" width="87px" height="31px" class="header__logo">
+			<nav class="header__nav nav">
+				<ul class="nav__list nav-list">
+					<li class="nav-list__item nav-item">
+						<a href="#features" class="nav-item__link">
+							features
+						</a>
+					</li>
+					<li class="nav-list__item nav-item">
+						<a href="#about" class="nav-item__link">
+							about 
+						</a>
+					</li>
+					<li class="nav-list__item nav-item">
+						<a href="#pricing" class="nav-item__link">
+							pricing
+						</a>
+					</li>
+					<li class="nav-list__item nav-item">
+						<a href="#reviews" class="nav-item__link">
+							reviews
+						</a>
+					</li>
+					<li class="nav-list__item nav-item">
+						<a href="#contact" class="nav-item__link">
+							contact
+						</a>
+					</li>
+				</ul>
 			</nav>	
 		</div>
 	</header>
@@ -45,18 +57,26 @@
 			<div class="overlay">
 			<div class="banner-block__container banner container">
 				<div class="banner__info banner-info">
-					<img src="img/logo@desktop.svg" alt="Axit logo" class="banner-info__logo">
+					<img src="img/logo@desktop.svg" alt="Axit logo" width="170px" height="55px" class="banner-info__logo">
 					<h1 class="banner-info__title title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
 					<p class="banner-info__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-					<button type="button" class="banner-info__button button">Download</botton>
+					<button type="button" class="banner-info__button button">Download</button>
 				</div>
-				<div class="banner__form-wrap form-wrap">
-					<p class="form-wrap__title">Try Your <span class="form-wrap__title--emphasis">FREE</span> Trial Today</p>
-					<form action="" class="form-wrap__form form">
-						<input type="text" name="name" value="name"class="form__item form-item">
-						<input type="text" name="email" value="email"class="form__item form-item">
-						<input type="password" name="password" value="password" class="form__item form-item">
-						<input type="submit" value="get started" class="form__button form-button">
+				<div class="banner__form-wrap form-box">
+					<p class="form-box__title">Try Your <span class="form-box__title--emphasis">FREE</span> Trial Today</p>
+					<form action="" method="post" class="form-box__form form">
+						<fieldset class="form__fieldset fieldset">
+							<label class="fieldset__item fildset-item">
+								<input type="text" name="name" placeholder="name"  class="fieldset-item__input form-item">
+							</label>
+							<label class="fieldset__item fildset-item">
+								<input type="text" name="email" placeholder="email" class="fieldset-item__input form-item">
+							</label>
+							<label class="fieldset__item fildset-item">
+								<input type="password" name="password" placeholder="password" class="fieldset-item__input form-item">
+							</label >
+						</fieldset>
+						<button type="submit" class="form__button form-button">get started </button>
 					</form>
 				</div>
 			</div>	
@@ -65,8 +85,8 @@
 		</section>
 
 		<section class="social-block">
-			<div class="social-block__wrap social-wrap container">
-				<div class="social-wrap__info social-info">
+			<div class="social-block__wrap social container">
+				<div class="social__info social-info">
 					<h2 class="social-info__title">
 						Social Media
 					</h2>
@@ -74,125 +94,109 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
 					</p>
 				</div>
-				<ul class="social-wrap__list link-list">
-					<li class="link-list__item item">
-						<a href="https://www.facebook.com/" class="item__link link">
-							<img src="/img/facebook_icon@desktop.svg" alt="Facebook icon" class="link__img">
+				<ul class="social__list social-list">
+					<li class="social-list__item social-item">
+						<a href="https://www.facebook.com/" aria-label="Facebook" class="social-item__link social-link">
+							<img src="/img/facebook_icon@desktop.svg" alt="Facebook icon" class="social-link__img">
 						</a>
 					</li>
-					<li class="link-list__item item">
-						<a href="https://twitter.com/" class="item__link link">
-							<img src="/img/twitter_icon@desktop.svg" alt="Twitter icon" class="link__img">
+					<li class="social-list__item social-item">
+						<a href="https://twitter.com/" aria-label="Twitter" class="social-item__link social-link">
+							<img src="/img/twitter_icon@desktop.svg" alt="Twitter icon" class="social-link__img">
 						</a>
 					</li>
-					<li class="link-list__item item">
-						<a href="https://www.linkedin.com/" class="item__link link">
-							<img src="/img/linkedin_icon@desktop.svg" alt="Linkedin icon" class="link__img">
+					<li class="social-list__item social-item">
+						<a href="https://www.linkedin.com/" aria-label="Linkedin" class="social-item__link social-link">
+							<img src="/img/linkedin_icon@desktop.svg" alt="Linkedin icon" class="social-link__img">
 						</a>
 					</li>
-					<li class="link-list__item item">
-						<a href="https://www.pinterest.com/" class="item__link link">
-							<img src="/img/pinterest_icon@desktop.svg" alt="Pinterest icon" class="link__img">
+					<li class="social-list__item social-item">
+						<a href="https://www.pinterest.com/" aria-label="Pinterest" class="social-item__link social-link">
+							<img src="/img/pinterest_icon@desktop.svg" alt="Pinterest icon" class="social-link__img">
 						</a>
 					</li>
-					<li class="link-list__item item">
-						<a href="https://www.instagram.com/" class="item__link link">
-							<img src="/img/instagram_icon@desktop.svg" alt="Instagram icon" class="link__img">
+					<li class="social-list__item social-item">
+						<a href="https://www.instagram.com/" aria-label="Instagram" class="social-item__link social-link">
+							<img src="/img/instagram_icon@desktop.svg" alt="Instagram icon" class="social-link__img">
 						</a>
 					</li>
-					<li class="link-list__item item">
-						<a href="https://github.com/" class="item__link link">
-							<img src="/img/github_icon@desktop.svg" alt="Github icon" class="link__img">
+					<li class="social-list__item social-item">
+						<a href="https://github.com/" aria-label="Github" class="social-item__link social-link">
+							<img src="/img/github_icon@desktop.svg" alt="Github icon" class="social-link__img">
 						</a>
 					</li>
-					<li class="link-list__item item">
-						<a href="https://rss.com/" class="item__link link">
-							<img src="/img/rss_icon@desktop.svg" alt="RSS icon" class="link__img">
+					<li class="social-list__item social-item">
+						<a href="https://rss.com/" aria-label="RSS" class="social-item__link social-link">
+							<img src="/img/rss_icon@desktop.svg" alt="RSS icon" class="social-link__img">
 						</a>
 					</li>
 				</ul>
 			</div>
 		</section>
 
-		<div class="container">
-
-			<section id="features" class="tabs-block">
-				<ul class="tabs-block__list shortcuts-list">
-					<li class="shortcuts-list__tag shortcuts-list__tag--active tag">
-						<button type="button" class="tag__button">Tab 1</button>
-					</li>
-					<li class="shortcuts-list__tag tag">
-						<button type="button" class="tag__button">Tab 2</button>
-					</li>
-					<li class="shortcuts-list__tag tag">
-						<button type="button" class="tag__button">Tab 3</button>
-					</li>
-				</ul>
-				<div class="tabs-block__tab tab">
-					<div class="tab__wrap tab-info">
-						<h2 class="tab-info__title">
-							Tabs with soft transitioning effect.
-						</h2>
-						<p class="tab-info__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan etviverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.
-						</p>
-						<p class="tab-info__text">
-							Natus odio esse beatae earum. Provident quae iusto accusamus aliquam explicabo voluptate quas. Tenetur, sed. Temporibus, repellat? Laborum unde beatae repellendus error accusamus! Quis quam, perferendis illo dolores, nobis error inventore, harum voluptatibus molestias facilis officiis minus porro repellat eaque provident earum.
-						</p>
-						<button type="button" class="tab-info__button button">Download</button>
-					</div>
-					<img src="img/tabs_img_1@desktop.jpg" alt="First tab image" class="tab__img">
-					<!-- <picture>
-						<source srcset="img/Rectangle111@desktop.jpg" media="(min-width: 960px)">
-						<img src="img/Rectangle111@tablet.jpg" alt="">
-					</picture> -->
+		<section id="features" class="tabs-block container">
+			<ul class="tabs-block__list shortcuts-list">
+				<li class="shortcuts-list__tag shortcuts-list__tag--active tag">
+					<button type="button" class="tag__button">Tab 1</button>
+				</li>
+				<li class="shortcuts-list__tag tag">
+					<button type="button" class="tag__button">Tab 2</button>
+				</li>
+				<li class="shortcuts-list__tag tag">
+					<button type="button" class="tag__button">Tab 3</button>
+				</li>
+			</ul>
+			<div class="tabs-block__tab tab">
+				<div class="tab__wrap tab-info">
+					<h2 class="tab-info__title">
+						Tabs with soft transitioning effect.
+					</h2>
+					<p class="tab-info__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan etviverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.
+					</p>
+					<p class="tab-info__text">
+						Natus odio esse beatae earum. Provident quae iusto accusamus aliquam explicabo voluptate quas. Tenetur, sed. Temporibus, repellat? Laborum unde beatae repellendus error accusamus! Quis quam, perferendis illo dolores, nobis error inventore, harum voluptatibus molestias facilis officiis minus porro repellat eaque provident earum.
+					</p>
+					<button type="button" class="tab-info__button button">Download</button>
 				</div>
-			</section>
+				<img src="img/tabs_img_1@desktop.jpg" alt="First tab image" class="tab__img">
+				<!-- <picture>
+					<source srcset="img/Rectangle111@desktop.jpg" media="(min-width: 960px)">
+					<img src="img/Rectangle111@tablet.jpg" alt="">
+				</picture> -->
+			</div>
+		</section>
 
-			<section id="about" class="awesome-block">
-				<h2 class="awesome-block__title title">Why this is awesome</h2>
-				<p class="awesome-block__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<ul class="awesome-block__list benefits-list list">
-					<li class="benefits-list__item benefit list-item">
-						<h3 class="benefit__title benefit__title--first">Thoughtful Design</h3>
-						<p class="benefit__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							<br>
-							elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-							<br>
-							accumsan et viverra.
-						</p>
-					</li>
-					<li class="benefits-list__item benefit list-item">
-						<h3 class="benefit__title benefit__title--second">Thoughtful Design</h3>
-						<p class="benefit__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							<br>
-							elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-							<br>
-							accumsan et viverra.
-						</p>
-					</li>
-					<li class="benefits-list__item benefit list-item">
-						<h3 class="benefit__title benefit__title--third">Thoughtful Design</h3>
-						<p class="benefit__text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							<br>
-							elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-							<br>
-							accumsan et viverra.
-						</p>
-					</li>
-				</ul>
-			</section>
-
-		</div>
+		<section id="about" class="awesome-block container">
+			<h2 class="awesome-block__title title">Why this is awesome</h2>
+			<p class="awesome-block__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<ul class="awesome-block__list benefits-list list">
+				<li class="benefits-list__item benefit list-item">
+					<h3 class="benefit__title benefit__title--first">Thoughtful Design</h3>
+					<p class="benefit__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					</p>
+				</li>
+				<li class="benefits-list__item benefit list-item">
+					<h3 class="benefit__title benefit__title--second">Thoughtful Design</h3>
+					<p class="benefit__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					</p>
+				</li>
+				<li class="benefits-list__item benefit list-item">
+					<h3 class="benefit__title benefit__title--third">Thoughtful Design</h3>
+					<p class="benefit__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					</p>
+				</li>
+			</ul>
+		</section>
 
 		<section id="pricing" class="pricing-block">
-			<div class="pricing-block__wrap pricing-info container">
-				<h2 class="pricing-info__title title">Pricing options</h2>
-				<p class="pricing-info__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<ul class="pricing-info__list pricing-list list">
+			<div class="pricing-block__wrap pricing container">
+				<h2 class="pricing__title title">Pricing options</h2>
+				<p class="pricing__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<ul class="pricing__list pricing-list list">
 					<li class="pricing-list__item option list-item">
 						<h3 class="option__name option-info-box">Basic</h3>
 						<p class="option__cost option-info-box">$10</p>
@@ -206,7 +210,7 @@
 							<li class="option-list__item">1 gb of space</li>
 						</ul>
 					</li>
-					<li class="pricing-list__item pricing-list__item--active option list-item">
+					<li class="pricing-list__item option list-item">
 						<h3 class="option__name option-info-box">Optima</h3>
 						<p class="option__cost option-info-box">$20</p>
 						<p class="option__text option-info-box">Free for life</p>
@@ -236,126 +240,130 @@
 			</div>
 		  </section>
 		
-		<div class="container">
-			<section id="reviews" class="customers-block">
-				<h2 class="customers-block__title title">what our customers are saying</h2>
-				<p class="customers-block__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<ul class="customers-block__list comments-list list">
-					<li class="comments-list__item list-item comment">
-						<div class="comment__block comment-block">
-							<p class="comment-block__text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
-							</p>
+		<section id="reviews" class="customers-block container">
+			<h2 class="customers-block__title title">what our customers are saying</h2>
+			<p class="customers-block__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<ul class="customers-block__list comments-list list">
+				<li class="comments-list__item list-item comment">
+					<div class="comment__block comment-block">
+						<p class="comment-block__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+						</p>
+					</div>
+					<div class="comment__customer user">
+						<img src="img/customer_avatar_1@desktop.jpg" alt="Davis Rhiel Madden avatar" width="70px" height="70px" class="customer__avatar">
+						<div class="customer__info customer-info">
+							<h3 class="customer-info__name">Davis Rhiel Madsen</h3>
+							<p class="customer-info__career">Manager</p>
 						</div>
-						<div class="comment__customer user">
-							<img src="img/customer_avatar_1@desktop.jpg" alt="Davis Rhiel Madsen avatar" class="customer__avatar">
-							<div class="customer__info customer-info">
-								<h3 class="customer-info__name">Davis Rhiel Madsen</h3>
-								<p class="customer-info__career">Manager</p>
-							</div>
+					</div>
+				</li>
+				<li class="comments-list__item list-item comment">
+					<div class="comment__block comment-block">
+						<p class="comment-block__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+						</p>
+					</div>
+					<div class="comment__customer user">
+						<img src="img/customer_avatar_2@desktop.jpg" alt="Jaydon Rosser avatar" width="70px" height="70px" class="customer__avatar">
+						<div class="customer__info customer-info">
+							<h3 class="customer-info__name">Jaydon Rosser</h3>
+							<p class="customer-info__career">Manager</p>
 						</div>
-					</li>
-					<li class="comments-list__item list-item comment">
-						<div class="comment__block comment-block">
-							<p class="comment-block__text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
-							</p>
+					</div>
+				</li>
+				<li class="comments-list__item list-item comment">
+					<div class="comment__block comment-block">
+						<p class="comment-block__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+						</p>
+					</div>
+					<div class="comment__customer user">
+						<img src="img/customer_avatar_3@desktop.jpg" alt="Cooper Dorwart avatar" width="70px" height="70px" class="customer__avatar">
+						<div class="customer__info customer-info">
+							<h3 class="customer-info__name">Cooper Dorwart</h3>
+							<p class="customer-info__career">Manager</p>
 						</div>
-						<div class="comment__customer user">
-							<img src="img/customer_avatar_2@desktop.jpg" alt="Jaydon Rosser avatar" class="customer__avatar">
-							<div class="customer__info customer-info">
-								<h3 class="customer-info__name">Jaydon Rosser</h3>
-								<p class="customer-info__career">Manager</p>
-							</div>
-						</div>
-					</li>
-					<li class="comments-list__item list-item comment">
-						<div class="comment__block comment-block">
-							<p class="comment-block__text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
-							</p>
-						</div>
-						<div class="comment__customer user">
-							<img src="img/customer_avatar_3@desktop.jpg" alt="Cooper Dorwart avatar" class="customer__avatar">
-							<div class="customer__info customer-info">
-								<h3 class="customer-info__name">Cooper Dorwart</h3>
-								<p class="customer-info__career">Manager</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-		</div>
+					</div>
+				</li>
+			</ul>
+		</section>
 
 		<section class="design-block">
 			<div class="overlay">
-			<div class="design-block__wrap design-info container">
-				<h2 class="design-info__title title">
+			<div class="design-block__container design container">
+				<h2 class="design__title title">
 					stylish axure design
 				</h2>
-				<p class="design-info__subtitle subtitle">
+				<p class="design__subtitle subtitle">
 					Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!
 				</p>
-				<button type="button" class="design-info__button button">
+				<button type="button" class="design__button button">
 					Download
 				</button>
 			</div>		
 			</div>
 		</section>
 
-		<div class="container">
-			<section id="contact" class="contact-block">
-				<h2 class="contact-block__title title">contact us</h2>
-				<p class="contact-block__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<form action="" class="contact-block__form contact-form">
-					<div class="contact-form__box form-box">
-						<input type="text" name="name" value="name"class="form-box__item form-item">
-						<input type="text" name="email" value="email"class="form-box__item form-item">
-						<input type="password" name="password" value="password" class="form-box__item form-item">
-					</div>
-					<textarea name="description" cols="30" rows="10" class="contact-form__text form-item">Message</textarea>
-					<input type="submit" value="Send Message" class="contact-form__button form-button">
-				</form>
-			</section>
-		</div>
+		<section id="contact" class="contact-block container">
+			<h2 class="contact-block__title title">contact us</h2>
+			<p class="contact-block__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<form action="" method="post" class="contact-block__form contact-form">
+				<fieldset class="contact-form__box form-box">
+					<label class="form-box__item box-item">
+						<input type="text" name="name" placeholder="name" class="box-item__input form-item">
+					</label>
+					<label class="form-box__item box-item">
+						<input type="text" name="email" placeholder="email" class="box-item__input form-item">
+					</label>
+					<label class="form-box__item box-item">
+						<input type="password" name="password" placeholder="password" class="box-item__input form-item">
+					</label>
+				</fieldset>
+				<label class="contact-form__textarea form-textarea">
+					<textarea name="description" placeholder="message" cols="30" rows="10" class="form-textarea__input form-item"></textarea>
+				</label>
+				<button type="submit" class="contact-form__button form-button">Send Message</button>
+			</form>
+		</section>
 
 	</main>
 
 	<footer class="footer">
 		<ul class="footer__list footer-list">
 			<li class="footer-list__item footer-item">
-				<a href="https://www.facebook.com/" class="footer-item__link footer-link">
-					<img src="/img/facebook_icon@desktop.svg" alt="Facebook icon" class="footer-link__img">
+				<a href="https://www.facebook.com/" aria-label="Facebook" class="footer-item__link footer-link">
+					<img src="/img/facebook_icon@desktop.svg" alt="Facebook icon" width="35px" height="35px" class="footer-link__img">
 				</a>
 			</li>
 			<li class="footer-list__item footer-item">
-				<a href="https://twitter.com/" class="footer-item__link footer-link">
-					<img src="/img/twitter_icon@desktop.svg" alt="Twitter icon" class="footer-link__img">
+				<a href="https://twitter.com/" aria-label="Twitter" class="footer-item__link footer-link">
+					<img src="/img/twitter_icon@desktop.svg" alt="Twitter icon" width="35px" height="35px" class="footer-link__img">
 				</a>
 			</li>
 			<li class="footer-list__item footer-item">
-				<a href="https://www.linkedin.com/" class="footer-item__link footer-link">
-					<img src="/img/linkedin_icon@desktop.svg" alt="Linkedin icon" class="footer-link__img">
+				<a href="https://www.linkedin.com/" aria-label="Linkedin" class="footer-item__link footer-link">
+					<img src="/img/linkedin_icon@desktop.svg" alt="Linkedin icon" width="35px" height="35px" class="footer-link__img">
 				</a>
 			</li>
 			<li class="footer-list__item footer-item">
-				<a href="https://www.pinterest.com/" class="footer-item__link footer-link">
-					<img src="/img/pinterest_icon@desktop.svg" alt="Pinterest icon" class="footer-link__img">
+				<a href="https://www.pinterest.com/" aria-label="Pinterest" class="footer-item__link footer-link">
+					<img src="/img/pinterest_icon@desktop.svg" alt="Pinterest icon" width="35px" height="35px" class="footer-link__img">
 				</a>
 			</li>
 			<li class="footer-list__item footer-item">
-				<a href="https://www.instagram.com/" class="footer-item__link footer-link">
-					<img src="/img/instagram_icon@desktop.svg" alt="Instagram icon" class="footer-link__img">
+				<a href="https://www.instagram.com/" aria-label="Instagram" class="footer-item__link footer-link">
+					<img src="/img/instagram_icon@desktop.svg" alt="Instagram icon" width="35px" height="35px" class="footer-link__img">
 				</a>
 			</li>
 			<li class="footer-list__item footer-item">
-				<a href="https://github.com/" class="footer-item__link footer-link">
-					<img src="/img/github_icon@desktop.svg" alt="Github icon" class="footer-link__img">
+				<a href="https://github.com/" aria-label="Github" class="footer-item__link footer-link">
+					<img src="/img/github_icon@desktop.svg" alt="Github icon" width="35px" height="35px" class="footer-link__img">
 				</a>
 			</li>
 			<li class="footer-list__item footer-item">
-				<a href="https://rss.com/" class="footer-item__link footer-link">
-					<img src="/img/rss_icon@desktop.svg" alt="RSS icon" class="footer-link__img">
+				<a href="https://rss.com/"  aria-label="RSS" class="footer-item__link footer-link">
+					<img src="/img/rss_icon@desktop.svg" alt="RSS icon" width="35px" height="35px" class="footer-link__img">
 				</a>
 			</li>
 		</ul>

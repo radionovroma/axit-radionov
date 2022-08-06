@@ -4,14 +4,13 @@
 }
 
 .social-block__wrap{
+	padding: 14px 0 18px;
 	display: flex;
-	flex-direction: row;
 	gap: 30px;
 }
 
-.social-info{
+.social__info{
 	width: 470px;
-	padding: 14px 0 18px;
 }
 
 .social-info__title{
@@ -28,11 +27,15 @@
 	color: #86878B;
 }
 
-.social-wrap__list{
+.social__list{
 	width: 670px;
 	display: flex;
 	flex-direction: row;
-	list-style-type: none;
 	justify-content: space-between;
 	align-items: center;
+	list-style-type: none;
+}
+
+.social-item__link{
+	display: flex;
 }

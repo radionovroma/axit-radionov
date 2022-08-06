@@ -1,39 +1,39 @@
 .design-block{
-	background: url(/img/design_bg.jpg);
+	background: url("/img/design_bg.jpg");
 	background-size: cover;
 }
 
-.design-block__wrap{
+.design-block__container{
 	padding: 60px 0 50px;
 }
 
-.design-info__title{
+.design__title{
 	color: #ffffff;
 }
 
-.design-info__title::after{
+.design__title::after{
 	background-color: #ffffff
 }
 
-.design-info__subtitle{
+.design__subtitle{
 	color: #ffffff;
 }
 
-.design-info__button{
-	min-height: 58px;
+.design__button{
 	min-width: 370px;
 	margin: 70px auto 0;
-	line-height: 25px;
+	display: block;
 	background: none;
 	border: 2px solid #FFFFFF;
+	
 }
 
-.design-info__button:hover{
+.design__button:hover{
 	color: #EC7979;
 	border: 2px solid #EC7979;
 }
 
-.design-info__button:active{
+.design__button:active{
 	color: #FFFFFF;
 	background: #AB4949;
 	border: 2px solid #AB4949;

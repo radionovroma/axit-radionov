@@ -1,41 +1,40 @@
 .contact-block{
-	padding: 110px 0 50px;
+	margin-top: 50px;
+	padding: 60px 0 50px;
 }
 
 .contact-block__form{
 	margin-top: 90px;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: flex-start;
 	justify-content: center;
 	gap: 50px 30px;
 }
 
-.form-box{
-	width: 570px;
+.contact-form__box{
 	display: flex;
 	flex-direction: column;
+	border: none;
+}
+
+.box-item__input{
+	width: 570px;
 }
 
 .form-box__item:not(:first-child){
-	margin-top: 50px;
+	margin-top: 33px;
 }
 
-.contact-form__text{
+.form-textarea__input{
 	width: 570px;
-	min-height: 195px;
-	overflow: visible;
 	resize: none;
 }
 
 .contact-form__button{
 	width: 370px;
 	padding: 16px;
-	font-weight: 600;
 	font-size: 18px;
 	line-height: 25px;
-	color: #FFFFFF;
 }
 
 .contact-form__button:hover{
@@ -44,5 +43,5 @@
 
 .contact-form__button:active{
 	background: #EC7979;
-	box-shadow: inset 0px 0px 10px #AB4949;
+	box-shadow: inset 0 0 10px #AB4949;
 }

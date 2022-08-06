@@ -13,6 +13,10 @@ body{
 	color: #000000;
 }
 
+.overlay{
+	background: rgba(0, 0, 0, 0.5);
+}
+
 .container{
 	width: 1170px;
 	margin: 0 auto;
@@ -47,58 +51,55 @@ body{
 }
 
 .list{
-	list-style-type: none;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
+	list-style-type: none;
 }
 
 .list-item{
 	width: 370px;
-	display: flex;
-	flex-direction: column;
-    align-items: center;
 }
 
 .button{
 	width: 270px;
-	min-height: 58px;
 	padding: 16px;
 	font-family: 'Open Sans', "Times New Roman", sans-serif;
 	font-weight: 600;
 	line-height: 25px;
-	display: flex;
-	justify-content: center;
-    align-items: center;
 	text-transform: capitalize;
+	text-align: center;
 	color: #FFFFFF;
-	text-decoration: none;
 	background: #EC7979;
 	border: none;
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
 }
 
 .form-item{
-	padding-bottom: 16px;
+	padding: 16px 10px;
 	font-family: 'Open Sans', "Times New Roman", sans-serif;
 	font-size: 14px;
 	line-height: 19px;
 	text-transform: capitalize;
 	border: none;
 	border-bottom: 1px solid #BDBDBD;;
+}
+
+.form-item::placeholder{
 	color: #BDBDBD;
+}
+
+.form-item:focus{
+	outline-color:  #BDBDBD;
 }
 
 .form-button{
 	font-family: 'Open Sans', "Times New Roman", sans-serif;
 	font-weight: 600;
 	text-transform: capitalize;
-	text-align: center;
 	color: #FFFFFF;
 	background: #EC7979;
 	border: none;
-}
-
-.overlay{
-	width: 100%;
-	background: rgba(0, 0, 0, 0.5);
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
 }

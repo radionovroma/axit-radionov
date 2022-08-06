@@ -4,11 +4,12 @@
 }
 
 .customers-block__list{
-	margin-top: 83px;
+	margin-top: 80px;
 }
 
 .comment-block{
 	padding-bottom: 20px;
+	position: relative;
 }
 
 .comment-block__text{
@@ -19,14 +20,9 @@
 	border-radius: 10px;
 }
 
-.comment-block{
-	position: relative;
-}
-
 .comment-block::after{
 	content: '';
 	position: absolute;
-	bottom: 0;
 	left: 70px;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
@@ -34,21 +30,17 @@
 }
 
 .comment__customer{
-	width: 100%;
 	margin-top: 46px;
 	display: flex;
 	gap: 30px;
 }
 
 .customer__avatar{
-	width: 70px;
-	height: 70px;
 	border-radius: 50%;
 }
 
 .customer-info__name{
 	font-family: 'Open Sans', "Times New Roman", sans-serif;;
-	font-weight: 700;
 	font-size: 24px;
 	line-height: 33px;
 	text-transform: capitalize;
