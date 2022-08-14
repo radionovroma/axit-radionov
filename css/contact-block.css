@@ -7,8 +7,7 @@
 	margin-top: 90px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	gap: 50px 30px;
+	justify-content: space-between;
 }
 
 .contact-form__box{
@@ -35,6 +34,7 @@
 	padding: 16px;
 	font-size: 18px;
 	line-height: 25px;
+	margin: 50px auto 0;
 }
 
 .contact-form__button:hover{
@@ -44,4 +44,54 @@
 .contact-form__button:active{
 	background: #EC7979;
 	box-shadow: inset 0 0 10px #AB4949;
+}
+
+@media (max-width: 1495px){
+	.contact-block{
+		padding-top: clamp(50px, 4.01vw, 60px);
+	}
+	
+	.contact-block__form{
+		margin-top: clamp(72px, 4.01vw, 90px);
+	}
+	
+	.box-item__input{
+		max-width: clamp(486px, 304px + 0.178 * 100vw, 570px);
+	}
+	
+	.form-textarea__input{
+		max-width: clamp(486px, 304px + 0.178 * 100vw, 570px);
+	}
+	
+	.contact-form__button{
+		max-width: clamp(318px, 205px + 0.11 * 100vw, 370px);
+	}
+}
+
+@media (max-width: 1024px){
+	.contact-block{
+		margin-top: 0;
+		padding: clamp(50px, 12.7vw, 100px) 0 clamp(40px, 8.69vw, 50px);
+	}
+	
+	.contact-block__form{
+		margin-top: clamp(44px, 10.4vw, 72px);
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.box-item__input{
+		max-width: clamp(288px, 198px + 0.28 * 100vw, 486px);
+	}
+
+	.form-textarea__input{
+		margin-top: 33px;
+		max-width: clamp(288px, 198px + 0.28 * 100vw, 486px);
+	}
+	
+	.contact-form__button{
+		max-width: clamp(288px, 274px + 0.042 * 100vw, 318px);
+		padding: clamp(12px, 2.65vw, 16px);
+	}
+	
 }

@@ -8,7 +8,7 @@
 
 .footer__list{
 	display: flex;
-	gap: 35px;
+	gap: 30px;
 	list-style: none;
 }
 
@@ -19,4 +19,23 @@
 .footer__copyright{
 	margin-top: 28px;
 	color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1495px){
+	.footer-link__img{
+		max-width: clamp(45px, 28px + 0.017 * 100vw, 53px);
+		max-height: clamp(45px, 28px + 0.017 * 100vw, 53px);
+	}
+}
+
+@media (max-width: 1024px){
+	
+	.footer__list{
+		gap: clamp(17px, 4.12vw, 30px);
+	}
+	
+	.footer-link__img{
+		max-width: clamp(26px, 17px + 0.027 * 100vw, 45px);
+		max-height: clamp(26px, 17px + 0.027 * 100vw, 45px);
+	}
 }

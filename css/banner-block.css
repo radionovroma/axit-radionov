@@ -1,6 +1,7 @@
 .banner-block{
 	background-image: url("/img/banner_bg.jpg");
 	background-size: cover;
+	background-position: 50% 100%;
 }
 
 .banner-block__container{
@@ -12,10 +13,6 @@
 
 .banner-info{
 	width: 670px;
-}
-
-.banner-info__logo{
-	margin-top: 23px;
 }
 
 .banner-info__title{
@@ -65,9 +62,14 @@
 	border-radius: 10px;
 }
 
+.form-box__form{
+	display: flex;
+	flex-direction: column;
+}
+
 .form-box__title{
 	font-family: 'Open Sans', "Times New Roman", sans-serif;
-	padding-top: 35px;
+	margin-top: 35px;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 33px;
@@ -93,8 +95,8 @@
 }
 
 .form__button{
-	width: 470px;
 	padding: 20px;
+	justify-content: stretch;
 	font-size: 15px;
 	line-height: 20px;
 	border-radius: 0 0 10px 10px;
@@ -107,4 +109,117 @@
 .form__button:active{
 	background: #EC7979;
 	box-shadow: inset 0 0 10px #AB4949;
+}
+
+@media (max-width: 1495px){
+	.banner-block__container{
+		padding: clamp(137px, 13.7vw, 210px) 0 clamp(106px, 11.36vw, 185px);
+	}
+	
+	.banner-info{
+		max-width:  clamp(455px, 4px + 0.44 * 100vw, 670px);
+	}
+	
+	.banner-info__logo{
+		width: clamp(115px, 2px + 0.11 * 100vw, 170px);
+		height: clamp(41px, 11px + 0.029 * 100vw, 55px);
+	}
+	
+	.banner-info__title{
+		margin-top: clamp(53px, 5vw, 73px);
+		padding-bottom: clamp(40px, 3.8vw, 55px);
+		font-size: clamp(36px, 3.36vw, 48px);
+		line-height: clamp(42px, 3.92vw, 56px);
+	}
+	
+	.banner-info__subtitle{
+		max-width: clamp(183px, 9px + 0.17 * 100vw, 270px);
+		margin-top: clamp(36px, 3.16vw, 42px);
+	}
+	
+	.banner-info__button{
+		margin-top: clamp(31px, 2.91vw, 42px);
+	}
+	
+	.banner__form-wrap{
+		width: clamp(398px, 242px + 0.15 * 100vw, 470px);
+	}
+	
+	.form-box__title{
+		font-size: clamp(18px, 1.7vw, 24px);
+		line-height: clamp(25px, 2.3vw, 33px);
+	}
+	
+	.fieldset-item__input{
+		width: clamp(298px, 142px + 0.15 * 100vw, 370px);
+	}
+	
+	.form__button{
+		width: clamp(398px, 242px + 0.15 * 100vw, 470px);
+	}
+}
+
+@media (max-width: 1023px){
+	.banner-block__container{
+		padding: clamp(90px, 20.75vw, 137px) 0 clamp(50px, 12.99vw, 106px);
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.banner-info{
+		min-width: clamp(288px, 212px + 0.24 * 100vw, 455px);
+		max-width: 100%;
+	}
+
+	.banner-info__logo{
+		display: none;
+	}
+	
+	.banner-info__title{
+		margin: 0;
+		font-size: clamp(36px, 7.97vw, 48px);
+		line-height: clamp(42px, 9.3vw, 56px);
+		text-align: center;
+	}
+	
+	.banner-info__title::after{
+		left: 50%;
+		transform: translate(-50%);
+	}
+	
+	.banner-info__subtitle{
+		max-width: 100%;
+		text-align: center;
+	}
+	
+	.banner-info__button{
+		width: 288px;
+		margin: 42px auto 0;
+		display: block;
+	}
+	
+	.banner__form-wrap{
+		max-width: clamp(288px, 238px + 0.15 * 100vw, 398px);
+		margin-top: 55px;
+	}
+	
+	.form-box__title{
+		padding: 0 20px;
+		font-size: clamp(14px, 3.98vw, 24px);
+		line-height: clamp(19px, 2.5vw, 33px);
+	}
+
+	.form__fieldset{
+		padding: 40px 20px 55px;
+		align-items: center;
+		gap: 33px;
+	}
+	
+	.fieldset-item__input{
+		max-width: clamp(240px, 181px + 0.18 * 100vw, 370px);
+	}
+	
+	.form__button{
+		max-width: clamp(288px, 238px + 0.15 * 100vw, 398px);
+	}
 }

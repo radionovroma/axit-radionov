@@ -1,6 +1,7 @@
 .design-block{
 	background: url("/img/design_bg.jpg");
 	background-size: cover;
+	background-position: 50% 100%;
 }
 
 .design-block__container{
@@ -37,4 +38,24 @@
 	color: #FFFFFF;
 	background: #AB4949;
 	border: 2px solid #AB4949;
+}
+
+
+@media (max-width: 1495px){
+	.design-block__container{
+		padding: clamp(50px, 4.01vw, 60px) 0 50px;
+	}
+
+	.design__button{
+		min-width: clamp(318px, 205px + 0.11 * 100vw, 370px);
+		margin-top: clamp(32px,  3.9vw, 70px);
+		
+	}
+}
+
+@media (max-width: 1024px){
+	.design__button{
+		min-width: clamp(288px, 275px + 0.041 * 100vw, 317px);
+		margin-top: 50px;
+	}
 }
