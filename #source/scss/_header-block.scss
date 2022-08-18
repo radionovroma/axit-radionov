@@ -1,0 +1,79 @@
+@import "variables";
+@import "utilities";
+
+.header-block{
+	background-color: #000000;
+
+	&__wrap{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.header__logo{
+	box-sizing: content-box;
+	padding: 22px 0;
+}
+
+.nav__list{
+	display: flex;
+	list-style-type: none;
+	max-width: 570px;
+}
+
+.nav-list__item{
+	display: flex;
+	transition: all 0.8s ease 0s;
+
+	&:hover{
+		background: $primary-color;
+	}
+
+	&:active{
+		background: $supportive-color;
+	}
+}
+
+.nav-item__link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 115px;
+	min-height: 75px;
+	padding: 10px;
+	font-family: $font-stack;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: capitalize;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+	
+@media (max-width: 1024px){
+	.header-block{
+		&__wrap{
+			flex-direction: column;
+			align-items: flex-start;
+			min-width: 100%;
+		}
+	}
+
+	.header__logo{
+		width: elementWidth(65, 87, 320, 1024);
+		height: elementWidth(23, 31, 320, 1024);
+		padding: elementSize(16, 22, 320, 1024) 16px;
+	}
+	
+	.nav__list{
+		flex-direction: column;
+		max-width: 100%;
+	}
+	
+	.nav-item__link{
+		min-width: 100vw;
+		min-height: 68px;
+	}
+}

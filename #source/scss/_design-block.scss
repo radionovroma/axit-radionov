@@ -1,0 +1,68 @@
+@import "variables";
+@import "utilities";
+
+.design-block{
+	background: url("/img/design_bg.jpg") 50% 100%;
+	background-size: cover;
+
+	&__container{
+		padding: 60px 0 50px;
+	}
+}
+
+.design{
+	&__title{
+		color: #ffffff;
+
+		&::after{
+			background-color: #ffffff;
+		}
+	}
+
+	&__subtitle{
+		color: #ffffff;
+	}
+
+	&__button{
+		display: block;
+		min-width: 370px;
+		border: 2px solid #FFFFFF;
+		margin: 70px auto 0;
+		background: none;
+
+		&:hover{
+			border: 2px solid $primary-color;
+			color: $primary-color;
+		}
+
+		&:active{
+			border: 2px solid $supportive-color;
+			color: #FFFFFF;
+			background: $supportive-color;
+		}
+	}
+}
+
+@media (max-width: 1510px){
+	.design-block{
+		&__container{
+			padding: elementSize(50, 60, 1024, 1510) 0 50px;
+		}
+	}
+	
+	.design{
+		&__button{
+			min-width: elementWidth(318, 370, 1024, 1510);
+			margin-top: elementSize(32, 70, 1024, 1510);
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.design{
+		&__button{
+			min-width: elementWidth(288, 317, 320, 1510);
+			margin-top: 50px;
+		}
+	}
+}

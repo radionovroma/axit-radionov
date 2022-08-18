@@ -1,0 +1,239 @@
+@import "variables";
+@import "utilities";
+
+.banner-block{
+	background-image: url("/img/banner_bg.jpg");
+	background-size: cover;
+	background-position: 50% 100%;
+
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 210px 0 185px;
+	}
+}
+
+.banner-info{
+	max-width: 670px;
+
+	&__logo{
+		width: 170px;
+		height: 55px;
+	}
+
+	&__title{
+		padding-bottom: 55px;
+		margin-top: 73px;
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 56px;
+		text-align: left;
+		text-transform: uppercase;
+		color: #ffffff;
+
+		&::after{
+			left: 0;
+			transform: none;
+			background-color: #ffffff;
+		}
+	}
+
+	&__subtitle{
+		max-width: 270px;
+		margin-top: 42px;
+		text-align: left;
+		color: #ffffff;
+	}
+
+	&__button{
+		border: 2px solid #FFFFFF;
+		margin-top: 42px;
+		background: none; 
+
+		&:hover{
+			border: 2px solid $primary-color;
+			color: $primary-color;
+		}
+
+		&:active{	
+			border: 2px solid $supportive-color;
+			color: #FFFFFF;
+			background: $supportive-color;
+		}
+	}
+}
+
+.form-box{
+	max-width: 470px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+
+	&__title{
+		padding: 0 10px;
+		margin-top: 35px;
+		font-family: $font-stack;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 33px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #333333;
+
+		&--emphasis{
+			color: $primary-color;
+		}
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.form{
+	&__fieldset{
+		display: flex;
+		flex-direction: column;
+		gap: 33px;
+		padding: 64px 50px 75px;
+		border: none;
+	}
+
+	&__button{
+		padding: 20px;
+		border-radius: 0 0 10px 10px;
+		font-size: 15px;
+		line-height: 20px;
+
+		&:hover{
+			background: $supportive-color;
+		}
+
+		&:active{
+			background: $primary-color;
+			box-shadow: inset 0 0 10px $supportive-color;
+		}
+	}
+}
+
+.fieldset-item__input{
+	min-width: 370px;
+}
+
+@media (max-width: 1510px){
+	.banner-block{
+		&__container{
+			padding: elementSize(137, 210, 1024, 1510) 0 elementSize(106, 185, 1024, 1510);
+		}
+	}
+	
+	.banner-info{
+		max-width:  elementWidth(455, 670, 1024, 1510);
+
+		&__logo{
+			width: elementWidth(115, 170, 1024, 1510);
+			height: elementWidth(41, 55, 1024, 1510);
+		}
+
+		&__title{
+			padding-bottom: elementSize(40, 55, 1024, 1510);
+			margin-top: elementSize(53, 73, 1024, 1510);
+			font-size: elementSize(36, 48, 1024, 1510);
+			line-height: elementSize(42, 56, 1024, 1510);
+		}
+
+		&__subtitle{
+			max-width: elementWidth(183, 270, 1024, 1510);
+			margin-top: elementSize(36, 42, 1024, 1510);
+		}
+
+		&__button{
+			margin-top: elementSize(31, 42, 1024, 1510);
+		}
+	}
+	
+	.form-box{
+		max-width: elementWidth(398, 470, 1024, 1510);
+
+		&__title{
+			font-size: elementSize(18, 24, 1024, 1510);
+			line-height: elementSize(25, 33, 1024, 1510);
+		}
+	}
+	
+	.fieldset-item__input{
+		min-width: elementWidth(298, 370, 1024, 1510);
+	}
+
+	.form{
+		&__button{
+			width: elementWidth(398, 470, 1024, 1510);
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.banner-block__container{
+		flex-direction: column;
+		align-items: center;
+		padding: elementSize(90, 137, 320, 1024) 0 elementSize(50, 106, 320, 1024);
+	}
+	
+	.banner-info{
+		max-width: elementWidth(288, 455, 320, 1024);
+
+		&__logo{
+			display: none;
+		}
+
+		&__title{
+			margin: 0;
+			font-size: elementSize(36, 48, 320, 1024);
+			line-height: elementSize(42, 56, 320, 1024);
+			text-align: center;
+
+			&::after{
+				left: 50%;
+				transform: translate(-50%);
+			}
+		}
+
+		&__subtitle{
+			max-width: 100%;
+			text-align: center;
+		}
+
+		&__button{
+			display: block;
+			width: 288px;
+			margin: 42px auto 0;
+		}
+	}
+
+	.form-box{
+		max-width: elementWidth(288, 398, 320, 1024);
+		margin-top: 55px;
+
+		&__title{
+			padding: 0 20px;
+			font-size: elementSize(14, 24, 320, 1024);
+			line-height: elementSize(19, 33, 320, 1024);
+		}
+	}
+
+	.form__fieldset{
+		padding: 40px 20px 55px;
+		align-items: center;
+	}
+	
+	.fieldset-item__input{
+		min-width: elementWidth(240, 370, 320, 1024);
+	}
+	
+	.form{
+		&__button{
+			width: elementWidth(288, 398, 320, 1024);
+		}
+	}
+}

@@ -1,0 +1,88 @@
+@import "variables";
+@import "utilities";
+
+.awesome-block{
+	padding: 60px 0;
+	margin-top: 50px;
+
+	&__list{
+		margin-top: 110px;
+	}
+}
+
+.benefit{
+	&__title{
+		position: relative;
+		padding-top: 170px;
+		font-family: $font-stack;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 33px;
+		text-align: center;
+
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			min-width: 92px;
+			min-height: 170px;
+			background-repeat: no-repeat;
+			transform: translate(-50%);
+		}
+
+		&--first::before{
+			background-image: url("/img/awesome_icon_1@desktop.svg");
+		}
+
+		&--second::before{
+			background-image: url("/img/awesome_icon_2@desktop.svg");
+		}
+
+		&--third::before{
+			background-image: url("/img/awesome_icon_3@desktop.svg");
+		}
+	}
+
+	&__text{
+		margin-top: 40px;
+		text-align: center;
+	}
+}
+
+
+@media (max-width: 1510px){
+	.awesome-block{
+		padding-top: elementSize(50, 60, 1024, 1510);
+
+		&__list{
+			margin-top: elementSize(55, 80, 1024, 1510);
+		}
+	}
+
+	.benefit{
+		&__title{
+			padding-top: elementSize(145, 170, 1024, 1510);
+			font-size: elementSize(18, 24, 1024, 1510);
+			line-height: elementSize(25, 33, 1024, 1510);
+		
+			&::before{
+				min-width: elementWidth(80, 92, 1024, 1510);
+				background-size: elementWidth(80, 92, 1024, 1510);
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.awesome-block{
+		padding-top: elementSize(50, 100, 320, 1024);
+		margin-top: 0;
+
+		&__list{
+			flex-direction: column;
+			align-items: center;
+			gap: 44px;
+		}
+	}
+}

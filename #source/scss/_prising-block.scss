@@ -1,0 +1,137 @@
+@import "variables";
+@import "utilities";
+
+.pricing-block{
+	padding: 110px 0 50px;
+	background: #F5F5F5;
+}
+  
+.pricing__list{
+	margin-top: 80px;
+}
+
+.pricing-list__item{
+	transition: all 0.5s ease 0s;
+
+	&:hover{
+		transform: translate(0, -20px);
+		filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+	}
+}
+
+.option{
+	&-info-box{
+		border: 2px solid #F5F5F5;
+		color: #FFFFFF;
+		background: #333333;
+	}
+
+	&__name{
+		padding: 11px;
+		font-family: $font-stack;
+		font-size: 24px;
+		line-height: 33px;
+		text-align: center;
+		text-transform: capitalize;
+	}
+
+	&__cost{
+		padding: 27px 10px;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 42px;
+		text-align: center;
+	}
+
+	&__text{
+		padding: 13px 10px;
+		text-align: center;
+		color: #86878B;
+	}
+
+	&-list{
+		list-style-type: none;
+
+		&__item{
+			padding: 13px 10px;
+			border: 2px solid #F5F5F5;
+			text-align: center;
+			text-transform: capitalize;
+			color: #86878B;
+			background: #FFFFFF;
+		}
+	}
+}
+
+@media (max-width: 1510px){
+	.pricing-block{
+		padding-top: elementSize(100, 110, 1024, 1510);
+	}
+	
+	.pricing-list{
+		margin-top: elementSize(54, 80, 1024, 1510);
+	}
+		
+	.option{
+		&__name{
+			padding: elementSize(8, 11, 1024, 1510) 10px;
+		}
+
+		&__cost{
+			padding: elementSize(23, 27, 1024, 1510) 10px;
+		}
+
+		&__text{
+			padding: elementSize(10, 13, 1024, 1510) 10px;
+		}
+
+		&-list{
+			&__item{
+				padding: elementSize(10, 13, 1024, 1510) 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.pricing-block{
+		padding-top: elementSize(50, 100, 320, 1024);
+	}
+	  
+	.pricing-list{
+		flex-direction: column;
+		align-items: center;
+		gap: 27px;
+		margin-top: elementSize(24, 50, 320, 1024);
+
+		&__item{
+			&:hover{
+				transform: none;
+		filter: none;
+			}
+		}
+	}
+			
+	.option{
+		&__name{
+			font-size: elementSize(18, 24, 320, 1024);
+			line-height: elementSize(25, 33, 320, 1024);
+		}
+
+		&__cost{
+			padding: elementSize(25, 27, 320, 1024) 10px;
+			font-size: elementSize(24, 36, 320, 1024);
+			line-height: elementSize(28, 42, 320, 1024);
+		}
+
+		&__text{
+			padding: 12px 10px;
+		}
+
+		&-list{
+			&__item{
+				padding: 12px 10px;
+			}
+		}
+	}
+}

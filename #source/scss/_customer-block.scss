@@ -1,0 +1,150 @@
+@import "variables";
+@import "utilities";
+
+.customers-block{
+	padding: 60px 0 60px;
+	margin-top: 50px;
+	
+	&__list{
+		margin-top: 80px;
+	}
+}
+
+.comment-block{
+	position: relative;
+	padding-bottom: 20px;
+
+	&__text{
+		padding: 38px 23px;
+		border-radius: 10px;
+		text-align: center;
+		color: #86878B;
+		background: #E2E2E2;
+	}
+
+	&::after{
+		content: '';
+		position: absolute;
+		left: 70px;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-top: 20px solid #E2E2E2;
+	}
+}
+
+.customer{
+	display: flex;
+	gap: 30px;
+	margin-top: 46px;
+
+	&__avatar{
+		border-radius: 50%;
+	}
+
+	&-info{
+		&__name{
+			font-family: $font-stack;
+			font-size: 24px;
+			line-height: 33px;
+			text-transform: capitalize;
+		}
+
+		&__career{
+			margin-top: 35px;
+		}
+	}
+}
+
+
+@media (max-width: 1510px){
+	.customers-block{
+		padding-top: elementSize(50, 60, 1024, 1510);
+
+		&__list{
+			margin-top: elementSize(54, 80, 1024, 1510);
+		}
+	}
+	
+	.comment-block{
+		&::after{
+			left: elementSize(60, 70, 1024, 1510);
+			border-left: elementSize(13, 15, 1024, 1510) solid transparent;
+			border-right: elementSize(13, 15, 1024, 1510) solid transparent;
+		}
+	}
+	
+	.customer{
+		gap: elementSize(23, 30, 1024, 1510);
+	
+		&__avatar{
+			max-width: elementWidth(63, 70, 1024, 1510);
+			max-height: elementWidth(63, 70, 1024, 1510);
+		}
+	
+		&-info{
+			&__name{
+				font-size: elementSize(18, 24, 1024, 1510);
+				line-height: elementSize(25, 33, 1024, 1510);
+			}
+	
+			&__career{
+				margin-top: elementSize(20, 35, 1024, 1510);
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px){
+	.customers-block{
+		padding-top: elementSize(50, 100, 320, 1024);
+		margin-top: 0;
+
+		&__list{
+			gap: elementSize(16, 19, 320, 1024);
+			margin-top: elementSize(25, 54, 320, 1024);
+			overflow-x: auto;
+
+			&::-webkit-scrollbar{
+				display: none;
+			}
+		}
+	}
+	
+	.comments-list__item{
+		min-width: elementWidth(288, 992, 320, 1024);
+	}
+	
+	.comment-block{
+		&__text{
+			padding: 38px elementSize(15, 23, 320, 1024);
+		}
+	
+		&::after{
+			left: elementSize(47, 70, 320, 1024);
+		}
+	}
+	
+	.customer{
+		&__customer{
+			gap: elementSize(20, 30, 320, 1024);
+		}
+
+		&__avatar{
+			max-width: elementWidth(57, 63, 320, 1024);
+			max-height: elementWidth(57, 63, 320, 1024);
+		}
+	
+		&-info{
+			&__name{
+				font-size: elementSize(14, 24, 320, 1024);
+				line-height: elementSize(19, 33, 320, 1024);
+			}
+	
+			&__career{
+				margin-top: elementSize(17, 20, 320, 1024);
+				font-size: elementSize(13, 18, 320, 1024);
+				line-height: elementSize(15, 21, 320, 1024);
+			}
+		}
+	}
+}

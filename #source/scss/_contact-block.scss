@@ -1,0 +1,106 @@
+@import "variables";
+@import "utilities";
+
+.contact-block{
+	padding: 60px 0 50px;
+	margin-top: 50px;
+
+	&__form{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 90px;
+	}
+}
+
+.contact-form{
+	&__container{
+		display: flex;
+		flex-direction: column;
+		border: none;
+	}
+
+	&__button{
+		min-width: 370px;
+		padding: 16px;
+		margin: 50px auto 0;
+		font-size: 18px;
+		line-height: 25px;
+
+		&:hover{
+			background: $supportive-color;
+		}
+
+		&:active{
+			background: $primary-color;
+			box-shadow: inset 0 0 10px $supportive-color;
+		}
+	}
+}
+
+.form-container__item:not(:first-child){
+	margin-top: 33px;
+}
+
+
+.container-item__input{
+	min-width: 570px;
+}
+
+.form-textarea__input{
+	min-width: 570px;
+	resize: none;
+}
+
+@media (max-width: 1510px){
+	.contact-block{
+		padding-top: elementSize(50, 60, 1024, 1510);
+
+		&__form{
+			margin-top: elementSize(72, 90, 1024, 1510);
+		}
+	}
+	
+	.contact-form{
+		&__button{
+			min-width: elementWidth(318, 370, 1024, 1510);
+		}
+	}
+	
+	.container-item__input{
+		min-width: elementWidth(486, 570, 1024, 1510);
+	}
+	
+	.form-textarea__input{
+		min-width: elementWidth(486, 570, 1024, 1510);
+	}
+}
+
+@media (max-width: 1024px){
+	.contact-block{
+		padding: elementSize(50, 100, 320, 1024) 0 elementSize(40px, 50, 320, 1024);
+		margin-top: 0;
+
+		&__form{
+			flex-direction: column;
+			align-items: center;
+			margin-top: elementSize(44, 72, 320, 1024);
+		}
+	}
+	
+	.contact-form{
+		&__button{
+			min-width: elementWidth(288, 318, 320, 1024);
+			padding: elementSize(12, 16, 320, 1024);
+		}
+	}
+	
+	.container-item__input{
+		min-width: elementWidth(288, 486, 320, 1024);
+	}
+	
+	.form-textarea__input{
+		min-width: elementWidth(288, 486, 320, 1024);
+		margin-top: 33px;
+	}
+}

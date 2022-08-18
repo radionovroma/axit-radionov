@@ -1,0 +1,176 @@
+@import "variables";
+@import "utilities";
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Raleway', "Arial", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.overlay{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.title{
+	position: relative;
+	padding-bottom: 60px;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000000;
+
+	&::after{
+		content: '';
+		position: absolute;
+		height: 1px;
+		bottom: 1px;
+		left: 50%;
+		min-width: 170px;
+		transform: translate(-50%);
+		background-color: $primary-color;
+	}
+}
+
+.subtitle{
+	margin-top: 40px;
+	text-align: center;
+	color: #86878B;
+}
+
+.list{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+
+	&-item{
+		width: 370px;
+	}
+}
+
+.button{
+	min-width: 270px;
+	padding: 16px;
+	border: none;
+	font-family: $font-stack;
+	font-weight: 600;
+	line-height: 25px;
+	text-transform: capitalize;
+	text-align: center;
+	color: #FFFFFF;
+	background: $primary-color;
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+}
+
+.form{
+	&-item{
+		padding: 16px 10px;
+		border: none;
+		font-family: $font-stack;
+		font-size: 14px;
+		line-height: 19px;
+		text-transform: capitalize;
+		border-bottom: 1px solid #BDBDBD;
+
+		&::placeholder{
+			color: #BDBDBD;
+		}
+
+		&:focus{
+			outline-color:  #BDBDBD;
+		}
+	}
+
+	&-button{
+		border: none;
+		font-family: $font-stack;
+		font-weight: 600;
+		text-transform: capitalize;
+		color: #FFFFFF;
+		background: $primary-color;
+		transition: all 0.5s ease 0s;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 1510px){
+	body{
+		font-size: elementSize(14, 18, 1024, 1510);
+		line-height: elementSize(16, 21, 1024, 1510);
+	}
+
+	.container{
+		max-width: elementWidth(992, 1170, 1024, 1510);
+	}
+
+	.title{
+		padding-bottom: elementSize(50, 60, 1024, 1510);            
+		font-size: elementSize(24, 36, 1024, 1510);
+		line-height: elementSize(28, 42, 1024, 1510);
+
+		&::after{
+			min-width: elementWidth(142, 170, 1024, 1510);
+		}
+	}
+
+	.subtitle{
+		margin-top: elementSize(32, 40, 1024, 1510);
+	}
+
+	.list{
+		&-item{
+			width: elementWidth(318, 370, 1024, 1510);
+		}
+	}
+	
+	.button{
+		min-width: elementWidth(183, 270, 1024, 1510);
+		padding: elementSize(12, 16, 1024, 1510);
+	}
+}
+
+@media (max-width: 1024px){
+	body{
+		font-size: 13px;
+		line-height: 15px;
+	}
+	
+	.container{
+		max-width: elementWidth(288, 992, 320, 1024);
+	}
+
+	.title{
+		font-size: elementSize(18, 24, 320, 1024);
+		line-height: elementSize(21, 28, 320, 1024);
+
+		&::after{
+			width: elementWidth(134, 142, 320, 1024);
+		}
+	}
+
+	.subtitle{
+		margin-top: elementSize(25, 32, 320, 1024);
+	}
+
+	.list{
+		&-item{
+			width: elementWidth(288, 317, 320, 1024);
+		}
+	}
+}
