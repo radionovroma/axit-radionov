@@ -1,5 +1,5 @@
-@import "variables";
-@import "utilities";
+@import "../variables.scss";
+@import "../variables.scss";
 
 .awesome-block{
 	padding: 60px 0;
@@ -32,15 +32,15 @@
 		}
 
 		&--first::before{
-			background-image: url("/img/awesome_icon_1@desktop.svg");
+			background-image: url("../img/awesome_icon_1@desktop.svg");
 		}
 
 		&--second::before{
-			background-image: url("/img/awesome_icon_2@desktop.svg");
+			background-image: url("../img/awesome_icon_2@desktop.svg");
 		}
 
 		&--third::before{
-			background-image: url("/img/awesome_icon_3@desktop.svg");
+			background-image: url("../img/awesome_icon_3@desktop.svg");
 		}
 	}
 

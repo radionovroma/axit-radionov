@@ -1,5 +1,5 @@
-@import "variables";
-@import "utilities";
+@import "../variables.scss";
+@import "../utilities.scss";
 
 *{
 	box-sizing: border-box;
@@ -39,7 +39,7 @@ body{
 		content: '';
 		position: absolute;
 		height: 1px;
-		bottom: 1px;
+		bottom: 0;
 		left: 50%;
 		min-width: 170px;
 		transform: translate(-50%);
@@ -160,7 +160,7 @@ body{
 		line-height: elementSize(21, 28, 320, 1024);
 
 		&::after{
-			width: elementWidth(134, 142, 320, 1024);
+			min-width: elementWidth(134, 142, 320, 1024);
 		}
 	}
 
