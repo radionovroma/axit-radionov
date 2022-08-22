@@ -29,7 +29,7 @@
 	height: 100%;
 }
 
-@media (max-width: 1510px){
+@media (max-width: 1509px){
 	.footer-block__list{
 		gap: elementSize(35, 45, 1024, 1510);
 	}
@@ -40,7 +40,7 @@
 	}
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1023px){
 	.footer-block__list{
 		gap: elementSize(22, 35, 320, 1024);
 	}

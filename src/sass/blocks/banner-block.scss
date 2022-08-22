@@ -95,7 +95,7 @@
 	&__fieldset{
 		display: flex;
 		flex-direction: column;
-		gap: 33px;
+		gap: 17px;
 		padding: 64px 50px 75px;
 		border: none;
 	}
@@ -121,10 +121,10 @@
 	min-width: 370px;
 }
 
-@media (max-width: 1510px){
+@media (max-width: 1509px){
 	.banner-block{
 		&__container{
-			padding: elementSize(137, 210, 1024, 1510) 0 elementSize(106, 185, 1024, 1510);
+			padding: elementSize(140, 210, 1024, 1510) 0 elementSize(106, 185, 1024, 1510);
 		}
 	}
 	
@@ -173,11 +173,11 @@
 	}
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1023px){
 	.banner-block__container{
 		flex-direction: column;
 		align-items: center;
-		padding: elementSize(90, 137, 320, 1024) 0 elementSize(50, 106, 320, 1024);
+		padding: 140px 0 elementSize(50, 106, 320, 1024);
 	}
 	
 	.banner-info{

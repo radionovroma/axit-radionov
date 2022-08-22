@@ -14,6 +14,11 @@ body{
 	font-size: 18px;
 	line-height: 21px;
 	color: #000000;
+
+	
+	&._lock{
+		overflow: hidden;
+	}
 }
 
 .overlay{
@@ -109,7 +114,7 @@ body{
 	}
 }
 
-@media (max-width: 1510px){
+@media (max-width: 1509px){
 	body{
 		font-size: elementSize(14, 18, 1024, 1510);
 		line-height: elementSize(16, 21, 1024, 1510);
@@ -145,7 +150,7 @@ body{
 	}
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1023px){
 	body{
 		font-size: 13px;
 		line-height: 15px;
@@ -156,8 +161,6 @@ body{
 	}
 
 	.title{
-		font-size: elementSize(18, 24, 320, 1024);
-		line-height: elementSize(21, 28, 320, 1024);
 
 		&::after{
 			min-width: elementWidth(134, 142, 320, 1024);
