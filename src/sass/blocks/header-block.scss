@@ -3,7 +3,6 @@
 
 .header-block{
 	width: 100%;
-	z-index: 10;
 	background-color: #000000;
 
 	&__wrap{
@@ -24,8 +23,8 @@
 
 .nav__list{
 	display: flex;
-	list-style-type: none;
 	max-width: 570px;
+	list-style-type: none;
 }
 
 .nav-list__item{
@@ -80,6 +79,7 @@
 		position: relative;
 		width: 24px;
 		height: 18px;
+		padding: 0 20px;
 		cursor: pointer;
 
 		&::before, &::after, span{
@@ -126,6 +126,8 @@
 	}
 
 	.menu__nav{
+		z-index: 2;
+		display: none;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -134,29 +136,16 @@
 		background-color: #000000;
 		padding-top: 56px;
 		transition: right 0.3s ease 0s;
-		overflow: auto;
-		z-index: 2;
 		transform: translate(100%, 0px);
 
 		&._active{
+			display: block;
 			right: 100%;
-		}
-
-		&::before{
-			content: "";
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 56px;
-			background-color: #000000;
-			z-index: 2;
 		}
 	}
 
 	.nav__list{
 		flex-direction: column;
-		
 		max-width: 100%;
 	}
 

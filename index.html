@@ -5,13 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="img/favicon.svg" type=" image/svg+xml">
+	<link rel="icon" href="./src/img/favicon.svg" type=" image/svg+xml">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="sass/style.scss">
+	<link rel="stylesheet" href="./src/sass/style.scss">
 	<title>Axit</title>
 </head>
 
@@ -19,7 +20,7 @@
 
 	<header class="header-block">
 		<div class="header-block__wrap header container">
-			<img src="img/logo@desktop.svg" alt="Axit logo" width="87px" height="31px" class="header__logo">
+			<img src="./src/img/logo@desktop.svg" alt="Axit logo" width="87px" height="31px" class="header__logo">
 			
 			<div class="header__menu menu">
 				<div class="menu__icon">
@@ -64,7 +65,7 @@
 			<div class="overlay">
 			<div class="banner-block__container banner container">
 				<div class="banner__info banner-info">
-					<img src="./img/logo@desktop.svg" alt="Axit logo" class="banner-info__logo">
+					<img src="./src/img/logo@desktop.svg" alt="Axit logo" class="banner-info__logo">
 					<h1 class="banner-info__title title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES </h1>
 					<p class="banner-info__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					<button type="button" class="banner-info__button button">Download</button>
@@ -103,37 +104,37 @@
 				<ul class="social__list social-list">
 					<li class="social-list__item social-item">
 						<a href="https://www.facebook.com/" aria-label="Facebook" class="social-item__link social-link">
-							<img src="./img/facebook_icon@desktop.svg" alt="Facebook icon" class="social-link__img">
+							<img src="./src/img/facebook_icon@desktop.svg" alt="Facebook icon" class="social-link__img">
 						</a>
 					</li>
 					<li class="social-list__item social-item">
 						<a href="https://twitter.com/" aria-label="Twitter" class="social-item__link social-link">
-							<img src="./img/twitter_icon@desktop.svg" alt="Twitter icon" class="social-link__img">
+							<img src="./src/img/twitter_icon@desktop.svg" alt="Twitter icon" class="social-link__img">
 						</a>
 					</li>
 					<li class="social-list__item social-item">
 						<a href="https://www.linkedin.com/" aria-label="Linkedin" class="social-item__link social-link">
-							<img src="./img/linkedin_icon@desktop.svg" alt="Linkedin icon" class="social-link__img">
+							<img src="./src/img/linkedin_icon@desktop.svg" alt="Linkedin icon" class="social-link__img">
 						</a>
 					</li>
 					<li class="social-list__item social-item">
 						<a href="https://www.pinterest.com/" aria-label="Pinterest" class="social-item__link social-link">
-							<img src="./img/pinterest_icon@desktop.svg" alt="Pinterest icon" class="social-link__img">
+							<img src="./src/img/pinterest_icon@desktop.svg" alt="Pinterest icon" class="social-link__img">
 						</a>
 					</li>
 					<li class="social-list__item social-item">
 						<a href="https://www.instagram.com/" aria-label="Instagram" class="social-item__link social-link">
-							<img src="./img/instagram_icon@desktop.svg" alt="Instagram icon" class="social-link__img">
+							<img src="./src/img/instagram_icon@desktop.svg" alt="Instagram icon" class="social-link__img">
 						</a>
 					</li>
 					<li class="social-list__item social-item">
 						<a href="https://github.com/" aria-label="Github" class="social-item__link social-link">
-							<img src="./img/github_icon@desktop.svg" alt="Github icon" class="social-link__img">
+							<img src="./src/img/github_icon@desktop.svg" alt="Github icon" class="social-link__img">
 						</a>
 					</li>
 					<li class="social-list__item social-item">
 						<a href="https://rss.com/" aria-label="RSS" class="social-item__link social-link">
-							<img src="./img/rss_icon@desktop.svg" alt="RSS icon" class="social-link__img">
+							<img src="./src/img/rss_icon@desktop.svg" alt="RSS icon" class="social-link__img">
 						</a>
 					</li>
 				</ul>
@@ -165,8 +166,8 @@
 					<button type="button" class="tab-info__button button">Download</button>
 				</div>
 					<picture class="tab__pic tab-pic">
-						<source srcset="./img/tabs_img_1@desktop.jpg"  media="(min-width: 1510px)">
-						<img src="./img/tabs_img_1@tablet.jpg" alt="Fisrst tab img">
+						<source srcset="./src/img/tabs_img_1@desktop.jpg"  media="(min-width: 1510px)">
+						<img src="./src/img/tabs_img_1@tablet.jpg" alt="Fisrst tab img">
 					</picture>
 			</div>
 		</section>
@@ -244,53 +245,68 @@
 			</div>
 		  </section>
 		
-		<section id="reviews" class="customers-block container">
+		  <section id="reviews" class="customers-block container">
 			<h2 class="customers-block__title title">what our customers are saying</h2>
 			<p class="customers-block__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<ul class="customers-block__list comments-list list">
-				<li class="comments-list__item list-item comment">
-					<div class="comment__block comment-block">
-						<p class="comment-block__text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
-						</p>
-					</div>
-					<div class="comment__customer customer">
-						<img src="./img/customer_avatar_1@desktop.jpg" alt="Davis Rhiel Madden avatar" width="70px" height="70px" class="customer__avatar">
-						<div class="customer__info customer-info">
-							<h3 class="customer-info__name">Davis Rhiel Madsen</h3>
-							<p class="customer-info__career">Manager</p>
+			<div class="customers-block__swiper swiper">
+				<div class="customers-block__list comments-list  swiper-wrapper">
+					<div class="comments-list__item comment swiper-slide">
+						<div class="comment__block comment-block">
+							<p class="comment-block__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+							</p>
+						</div>
+						<div class="comment__customer customer">
+							<picture class="customer__avatar">
+								<source srcset="./src/img/customer_avatar_1@desktop.jpg"  media="(min-width: 1510px)">
+								<source srcset="./src/img/customer_avatar_1@tablet.jpg"  media="(min-width: 1024px)">
+								<img src="./src/img/customer_avatar_1@mobile.jpg" alt="Fisrst tab img">
+							</picture>
+							<div class="customer__info customer-info">
+								<h3 class="customer-info__name">Davis Rhiel Madsen</h3>
+								<p class="customer-info__career">Manager</p>
+							</div>
 						</div>
 					</div>
-				</li>
-				<li class="comments-list__item list-item comment">
-					<div class="comment__block comment-block">
-						<p class="comment-block__text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
-						</p>
-					</div>
-					<div class="comment__customer customer">
-						<img src="./img/customer_avatar_2@desktop.jpg" alt="Jaydon Rosser avatar" width="70px" height="70px" class="customer__avatar">
-						<div class="customer__info customer-info">
-							<h3 class="customer-info__name">Jaydon Rosser</h3>
-							<p class="customer-info__career">Manager</p>
+					<div class="comments-list__item list-item comment swiper-slide">
+						<div class="comment__block comment-block">
+							<p class="comment-block__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+							</p>
+						</div>
+						<div class="comment__customer customer">
+							<picture class="customer__avatar">
+								<source srcset="./src/img/customer_avatar_2@desktop.jpg"  media="(min-width: 1510px)">
+								<source srcset="./src/img/customer_avatar_2@tablet.jpg"  media="(min-width: 1024px)">
+								<img src="./src/img/customer_avatar_2@mobile.jpg" alt="Fisrst tab img">
+							</picture>
+							<div class="customer__info customer-info">
+								<h3 class="customer-info__name">Jaydon Rosser</h3>
+								<p class="customer-info__career">Manager</p>
+							</div>
 						</div>
 					</div>
-				</li>
-				<li class="comments-list__item list-item comment">
-					<div class="comment__block comment-block">
-						<p class="comment-block__text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
-						</p>
-					</div>
-					<div class="comment__customer customer">
-						<img src="./img/customer_avatar_3@desktop.jpg" alt="Cooper Dorwart avatar" width="70px" height="70px" class="customer__avatar">
-						<div class="customer__info customer-info">
-							<h3 class="customer-info__name">Cooper Dorwart</h3>
-							<p class="customer-info__career">Manager</p>
+					<div class="comments-list__item list-item comment swiper-slide">
+						<div class="comment__block comment-block">
+							<p class="comment-block__text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+							</p>
+						</div>
+						<div class="comment__customer customer">
+							<picture class="customer__avatar">
+								<source srcset="./src/img/customer_avatar_3@desktop.jpg"  media="(min-width: 1510px)">
+								<source srcset="./src/img/customer_avatar_3@tablet.jpg"  media="(min-width: 1024px)">
+								<img src="./src/img/customer_avatar_3@mobile.jpg" alt="Fisrst tab img">
+							</picture>
+							<div class="customer__info customer-info">
+								<h3 class="customer-info__name">Cooper Dorwart</h3>
+								<p class="customer-info__career">Manager</p>
+							</div>
 						</div>
 					</div>
-				</li>
-			</ul>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
 		</section>
 
 		<section class="design-block">
@@ -338,37 +354,37 @@
 			<ul class="footer-block__list footer-list">
 				<li class="footer-list__item footer-item">
 					<a href="https://www.facebook.com/" aria-label="Facebook" class="footer-item__link footer-link">
-						<img src="./img/facebook_icon@desktop.svg" alt="Facebook icon" class="footer-link__img">
+						<img src="./src/img/facebook_icon@desktop.svg" alt="Facebook icon" class="footer-link__img">
 					</a>
 				</li>
 				<li class="footer-list__item footer-item">
 					<a href="https://twitter.com/" aria-label="Twitter" class="footer-item__link footer-link">
-						<img src="./img/twitter_icon@desktop.svg" alt="Twitter icon" class="footer-link__img">
+						<img src="./src/img/twitter_icon@desktop.svg" alt="Twitter icon" class="footer-link__img">
 					</a>
 				</li>
 				<li class="footer-list__item footer-item">
 					<a href="https://www.linkedin.com/" aria-label="Linkedin" class="footer-item__link footer-link">
-						<img src="./img/linkedin_icon@desktop.svg" alt="Linkedin icon" class="footer-link__img">
+						<img src="./src/img/linkedin_icon@desktop.svg" alt="Linkedin icon" class="footer-link__img">
 					</a>
 				</li>
 				<li class="footer-list__item footer-item">
 					<a href="https://www.pinterest.com/" aria-label="Pinterest" class="footer-item__link footer-link">
-						<img src="./img/pinterest_icon@desktop.svg" alt="Pinterest icon" class="footer-link__img">
+						<img src="./src/img/pinterest_icon@desktop.svg" alt="Pinterest icon" class="footer-link__img">
 					</a>
 				</li>
 				<li class="footer-list__item footer-item">
 					<a href="https://www.instagram.com/" aria-label="Instagram" class="footer-item__link footer-link">
-						<img src="./img/instagram_icon@desktop.svg" alt="Instagram icon" class="footer-link__img">
+						<img src="./src/img/instagram_icon@desktop.svg" alt="Instagram icon" class="footer-link__img">
 					</a>
 				</li>
 				<li class="footer-list__item footer-item">
 					<a href="https://github.com/" aria-label="Github" class="footer-item__link footer-link">
-						<img src="./img/github_icon@desktop.svg" alt="Github icon" class="footer-link__img">
+						<img src="./src/img/github_icon@desktop.svg" alt="Github icon" class="footer-link__img">
 					</a>
 				</li>
 				<li class="footer-list__item footer-item">
 					<a href="https://rss.com/"  aria-label="RSS" class="footer-item__link footer-link">
-						<img src="./img/rss_icon@desktop.svg" alt="RSS icon" class="footer-link__img">
+						<img src="./src/img/rss_icon@desktop.svg" alt="RSS icon" class="footer-link__img">
 					</a>
 				</li>
 			</ul>
@@ -378,7 +394,9 @@
 		</div>
 	</footer>
 
-	<script src="./js/header.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./src/js/header.js"></script>
+	<script src="./src/js/swiper.js"></script>
 	
 </body>
 

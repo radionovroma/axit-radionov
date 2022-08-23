@@ -4,7 +4,7 @@
 .customers-block{
 	padding: 60px 0 60px;
 	margin-top: 50px;
-	
+
 	&__list{
 		margin-top: 80px;
 	}
@@ -37,7 +37,7 @@
 	gap: 30px;
 	margin-top: 46px;
 
-	&__avatar{
+	&__avatar source, &__avatar img{
 		border-radius: 50%;
 	}
 
@@ -55,6 +55,13 @@
 	}
 }
 
+.swiper-slide{
+	max-width: 370px;
+}
+
+.swiper-pagination{
+	display: none;
+}
 
 @media (max-width: 1509px){
 	.customers-block{
@@ -76,11 +83,6 @@
 	.customer{
 		gap: elementSize(23, 30, 1024, 1510);
 	
-		&__avatar{
-			max-width: elementWidth(63, 70, 1024, 1510);
-			max-height: elementWidth(63, 70, 1024, 1510);
-		}
-	
 		&-info{
 			&__name{
 				font-size: elementSize(18, 24, 1024, 1510);
@@ -92,26 +94,26 @@
 			}
 		}
 	}
+
+	.swiper-slide{
+		max-width: elementWidth(318, 370, 1024, 1510);
+	}
 }
 
 @media (max-width: 1023px){
 	.customers-block{
 		padding-top: elementSize(50, 100, 320, 1024);
 		margin-top: 0;
+		padding-bottom: 30px;
 
 		&__list{
-			gap: elementSize(16, 19, 320, 1024);
 			margin-top: elementSize(25, 54, 320, 1024);
-			overflow-x: auto;
-
-			&::-webkit-scrollbar{
-				display: none;
-			}
+			padding-bottom: 50px;
 		}
 	}
 	
 	.comments-list__item{
-		min-width: elementWidth(288, 992, 320, 1024);
+		min-width: elementWidth(288, 318, 320, 1024);
 	}
 	
 	.comment-block{
@@ -125,19 +127,13 @@
 	}
 	
 	.customer{
-		&__customer{
-			gap: elementSize(20, 30, 320, 1024);
-		}
+		gap: elementSize(20, 30, 320, 1024);
 
-		&__avatar{
-			max-width: elementWidth(57, 63, 320, 1024);
-			max-height: elementWidth(57, 63, 320, 1024);
-		}
 	
 		&-info{
 			&__name{
-				font-size: elementSize(14, 24, 320, 1024);
-				line-height: elementSize(19, 33, 320, 1024);
+				font-size: elementSize(14, 18, 320, 1024);
+				line-height: elementSize(19, 25, 320, 1024);
 			}
 	
 			&__career{
@@ -147,4 +143,24 @@
 			}
 		}
 	}
+
+	.swiper-pagination{
+		display: block;
+		bottom: 0 !important;
+	}
+
+
+	.swiper-pagination-bullet{
+		width: 10px;
+    	height: 10px;
+		margin: 0 25px !important;
+		background-color: #ffffff !important; 
+		border: 1px solid #86878B !important;
+		opacity: 100 !important;
+
+		&-active{
+			background-color: #86878B !important;
+		}
+	}
+
 }
